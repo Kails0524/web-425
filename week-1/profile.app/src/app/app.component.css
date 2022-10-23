@@ -1,0 +1,9 @@
+.row {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+}
+.col {
+    align-items:center;
+}
