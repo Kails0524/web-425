@@ -1,0 +1,29 @@
+<!-- dialog pop up using material design -->
+<mat-card>
+    <mat-card-title class="blue">
+      <p>Book Title: <br />{{ book.title }}</p>
+    </mat-card-title>
+    <br /><br />
+    <mat-card-content>
+      <div fxLayout="column" class="book-details">
+        <p>ISBN: <br />{{ book.isbn }}</p>
+        <p>
+          Authors:<br />
+          {{ book.authors.join(", ") }}
+        </p>
+        <p>
+          Number of Pages: <br />
+          {{ book.numOfPages }}
+        </p>
+        <p>
+          Description:<br />
+          {{ book.description }}
+        </p>
+      </div>
+    </mat-card-content>
+    <mat-card-actions align="end">
+      <button mat-raised-button color="accent" matDialogClose="confirm">
+        OK
+      </button>
+    </mat-card-actions>
+  </mat-card>
